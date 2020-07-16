@@ -21,8 +21,13 @@
   (:subheader "Experience at Yandex 2005-Present (15 years)")
   (:about
    "I started my career at Yandex as a C++ software developer but after a few years switched to the Python. Participated in many projects, have built external and internal web services. Some of them aren't available anymore."
+   
    "Currently, I'm working on the improvement of our data analytics platform, building better tools for ETL process execution. Most technologies we use are closed source, but I worked on their integration with Jupyter Hub and Luigi."
-   "The previous product I worked on is Yandex Connect. I was a team lead on this project. It is a b2b product of Yandex, where we started to open and sell some of our internal tools to other companies. Core technologies we've used in this project are Python, Flask and Postgresql."
+
+   "The previous product I worked on is [Yandex Connect](https://connect.yandex.com/). I was a team lead on this project. It is a b2b product of Yandex, where we started to open and sell some of our internal tools to other companies. Yandex Connect is a \"little brother\" of the Google Apps for Domain."
+
+   "Core technologies we've used in this project are Python, Flask and Postgresql. It was the most complex project I've ever done. My team and I built an API to provide information about companies and their structures. Also, we supported the integration with Yandex Mail service and DNS hosting."
+   
    "The most exciting and valuable project I've worked on in Yandex is our identity management system. I've built it from scratch in close cooperation with our security team and a few product teams. The schedule was very tight because this system was a must-have requirement to let Yandex go to the IPO. This identity management system is alive and widely used across the company, providing access to almost any of our internal tools.")
   
   (:subheader "Experience Before Yandex 2000-2005 (5 years)")
