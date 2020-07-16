@@ -1,225 +1,171 @@
-<!DOCTYPE html>
-<html>
+<html lang=en>
+ <head>
+  <meta charset=UTF-8>
+  <style>body{
+    padding-left: 10em;
+    padding-right: 10em;
+    font-size: 1.5rem;
+}
 
-<head>
-<title>Блог о фотографии Большого 40вт Светляка</title>
+body .title{
+    text-align: center;
+    font-size: 3rem;
+}
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="Это блог о фотографии, самодельных камерах и альтернативных способах печати."/>
-<meta name="keywords" content="фотограф,фотография,pinhole,сделай сам,цианотипия,альтернативная печать,правила фотографии"/>
-<link rel="icon" href="http://media.svetlyak.ru/images/favicon.ico" type="image/x-icon"/>
-<link rel="home" href="/" />
-<link rel="help" href="/blog/kak-chitat-etot-blog/" />
-<link rel="author" href="/blog/contacts/" title="Александр Артёменко" />
-<link rel="me" type="text/html" href="http://www.google.com/profiles/svetlyak.40wt" />
+body .subtitle{
+    text-align: center;
+    font-size: 2rem;
+}
 
-<link rel="alternate" type="application/atom+xml" title="Блог" href="http://feeds.feedburner.com/40-wt-firefly" />
-<link rel="alternate" type="application/atom+xml" title="Фотографии" href="http://feeds.feedburner.com/40-wt-firefly/photos" />
-<link rel="alternate" type="application/atom+xml" title="Twitter" href="http://twitter.com/statuses/user_timeline/7148262.atom" />
+body .list-header{
+    margin-left: 2.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
 
-<link rel="openid.server" href="http://openid.yandex.ru/server/" />
-<link rel="openid2.provider" href="http://openid.yandex.ru/server/" />
-<link rel="openid.delegate" href="http://openid.yandex.ru/alexander-artemenko/" />
-<link rel="openid2.local_id" href="http://openid.yandex.ru/alexander-artemenko/" />
-<link rel="pavatar" href="http://media.svetlyak.ru/pavatar.png" />
+body .contacts{
+    font-size: 1.5rem;
+}
 
+body .contacts .label{
+    text-align: right;
+    padding-right: 1rem;
+}
 
-    <link href="http://media.svetlyak.ru/css/screen.css" rel="stylesheet" type="text/css" media="screen,projection" /><link href="http://media.svetlyak.ru/css/links/skin.css" rel="stylesheet" type="text/css" media="screen,projection" /><link href="http://media.svetlyak.ru/css/jquery.jcarousel.css" rel="stylesheet" type="text/css" media="screen,projection" />
-    <!--[if lt IE 8]>
-        <link href="http://media.svetlyak.ru/css/ie.css" rel="stylesheet" type="text/css" media="screen,projection" />
-    <![endif]-->
-    <link href="http://media.svetlyak.ru/css/print.css" rel="stylesheet" type="text/css" media="print" />
+body .centered{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+body .for-print{
+    display: none;
+}
 
+body .not-for-print{
+    display: inline;
+}
 
-    <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
-    <script type="text/javascript" src="http://media.svetlyak.ru/js/common/jquery-1.3.2.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/common.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/common/comments.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/gallery/lightbox.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/gallery/controls.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/downloadr.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/gallery/jqpanview.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/flashdetect.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/image_stack.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/jquery.jcarousel.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/jquery.jeditable.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/blog.js" charset="utf-8"></script><script type="text/javascript" src="http://media.svetlyak.ru/js/share.js" charset="utf-8"></script>
-
-
-
-    
-
-</head>
-
-<body class="front">
-<!-- Container -->
-<div class="container">
-    
-    <div class="header">
-        <div class="logo"><img src="http://media.svetlyak.ru/images/camera.png"/></div>
-        <div class="title"><h1>Блог о фотографии Большого 40вт Светляка</h1></div>
-        <div class="rss"><a href="/feeds/"><img src="http://media.svetlyak.ru/images/btn/feed-icon-16x16.png" title="RSS"/></a></div>
-    </div>
-
-    <hr class="space" />
-
-
-        <!-- Content -->
-        <!--[if lt IE 7]>
-        <p class="ie-warning">Дорогие пользователи IE 6, не пользуйтесь устаревшим браузером, поставьте новый и красивый <a href="/redir/?url=http%3A%2F%2Fie.yandex.ru%2F">Internet Explorer 8</a> или <a href="/redir/?url=http%3A%2F%2Ffx.yandex.ru%2F">Firefox</a>.</p>
-        <![endif]-->
-        <div class="content">
-            
-            
-            
-                
-
-
-            
-            
-
-<div class="search">
-    
-<form action="/search/" method="get">
-    <table><tbody><tr>
-    <td width="100%"><input type="text" name="text" value=""/></td>
-    <td><input type="submit" value="Поиск"/></td>
-    </tr></tbody></table>
-</form>
-
-    <p class="example">Пример: <a class="dont-touch" rel="nofollow" href="/search/?text=пресеты для lightroom">пресеты для lightroom</a></p>
-
-
-</div>
-
-<div class="themes">
-    <h2 class="caps">Темы</h2>
-    <dl>
-        <dt>Как снимать?</dt>
-        <dd><a href="/blog/tags/photo-rules/">Правила фотографии</a></dd>
-        <dt>Adobe Lightroom?</dt>
-        <dd><a href="/blog/tags/lightroom/">Пресеты и плагины</a></dd>
-        <dt>Как сделать?</dt>
-        <dd><a href="/blog/tags/pinhole/">Pinhole и самоделки</a></dd>
-        <dt>Как осветить?</dt>
-        <dd><a href="/blog/tags/light/">Эксперименты со светом</a></dd>
-        <dt>Где всё остальное?</dt>
-        <dd><a href="/blog/year/">Хронология записей</a></dd>
-    </dl>
-</div>
-
-<div class="thumbs">
-    <h2 class="caps">Фотоблог</h2>
-    
-    
-    <a href="/gallery/603/"><div><img src="http://media.svetlyak.ru/gallery/120831/thumb/100x100/03-24-11.jpg" alt="Смог над городом" title="Смог над городом"/></div></a>
-    
-    <a href="/gallery/602/"><div><img src="http://media.svetlyak.ru/gallery/120830/thumb/100x100/03-34-01.jpg" alt="Силуэт дерева" title="Силуэт дерева"/></div></a>
-    
-    <a href="/gallery/601/"><div><img src="http://media.svetlyak.ru/gallery/120808/thumb/100x100/03-35-01-16bit.jpg" alt="Осока" title="Осока"/></div></a>
-    
-    <a href="/gallery/600/"><div><img src="http://media.svetlyak.ru/gallery/120807/thumb/100x100/03-24-10.jpg" alt="Royal Star" title="Royal Star"/></div></a>
-    
-    <a href="/gallery/599/"><div><img src="http://media.svetlyak.ru/gallery/120806/thumb/100x100/02-33-15a.jpg" alt="На Финском заливе" title="На Финском заливе"/></div></a>
-    
-    <a href="/gallery/598/"><div><img src="http://media.svetlyak.ru/gallery/120802/thumb/100x100/02-33-34a.jpg" alt="Порт в Питере" title="Порт в Питере"/></div></a>
-    
-    <a href="/gallery/597/"><div><img src="http://media.svetlyak.ru/gallery/120731/thumb/100x100/03-31-022.jpg" alt="Осенний ручеёк" title="Осенний ручеёк"/></div></a>
-    
-    <a href="/gallery/596/"><div><img src="http://media.svetlyak.ru/gallery/120607/thumb/100x100/05-12-01.jpg" alt="Моторка (цвет)" title="Моторка (цвет)"/></div></a>
-    
-    <a href="/gallery/595/"><div><img src="http://media.svetlyak.ru/gallery/120606/thumb/100x100/05-12-04.jpg" alt="Старая береза" title="Старая береза"/></div></a>
-    
-    <p><a class="b-more" href="/gallery/">больше снимков…</a></p>
-</div>
-
-<!-- Яндекс.Директ -->
-<div id="yandex_ad">
-
-</div>
-<script type="text/javascript">
-(function(w, d, n, s, t) {
-    w[n] = w[n] || [];
-    w[n].push(function() {
-        Ya.Direct.insertInto(103894, "yandex_ad", {
-            stat_id: 2,
-            site_charset: "utf-8",
-            ad_format: "direct",
-            font_size: 1,
-            type: "vertical",
-            limit: 4,
-            title_font_size: 3,
-            site_bg_color: "FFFFFF",
-            header_bg_color: "FEEAC7",
-            title_color: "0000CC",
-            url_color: "006600",
-            text_color: "000000",
-            hover_color: "0066FF",
-            favicon: true
-        });
-    });
-    t = d.documentElement.firstChild;
-    s = d.createElement("script");
-    s.type = "text/javascript";
-    s.src = "http://an.yandex.ru/system/context.js";
-    s.setAttribute("async", "true");
-    t.insertBefore(s, t.firstChild);
-})(window, document, "yandex_context_callbacks");
-</script>
-
-<div class="blogroll">
-    <h2 class="caps">Мои друзья</h2>
-    <ul>
-
-    <li><a href="http://focused.ru" title="Журнал о камерах и фотографии">Простые фокусы</a></li>
-
-    <li><a href="http://fotokaif.com" title="Блог посвященный художественной фотографии">Фото-кайф</a></li>
-
-    <li><a href="http://photodealer.ru/" title="Блог о фототехнике, программах, сайтах, выставках и методах облегчающих работу фотографа.">ФотоДилер</a></li>
-
-    <li><a href="http://photomixer.ru/" title="Новинки, технологии, советы, методики, авторы, оборудование, программное обеспечение и многое другое.">PhotoMixer</a></li>
-
-    <li><a href="http://virtser.net/blog/" title="Блог Давида Вирцера, о жизни, программировании и фотографии">PoiSoN&#39;s Блог</a></li>
-
-</ul>
-
-</div>
+body .side-by-side{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 
 
 
-        </div>
-        <!-- END Content -->
-
-        
-        
-
-        <hr class="space" />
-
-        
-        <div class="footer">
-            <div class="copyright">Права на все изображения и тексты, размещенные на этом сайте, принадлежат <a href="/blog/contacts/">Александру Артёменко</a>, но могут быть использованны с соответствии с лицензией <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons BY-NC-SA</a>. Используя эти материалы в коммерческих целях, без согласования с автором, вы навсегда лишитесь положительной кармы :)</div>
-            
-                <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1970967-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<!-- Yandex.Metrika counter -->
-<div style="display:none;"><script type="text/javascript">
-(function(w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter217025 = new Ya.Metrika({id:217025, enableAll: true, webvisor:true});
-        }
-        catch(e) { }
-    });
-})(window, "yandex_metrika_callbacks");
-</script></div>
-<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-<noscript><div><img src="//mc.yandex.ru/watch/217025" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-            
-        </div>
-        
-</div> <!-- content -->
-</body>
+body ul li{
+    font-size: 2rem;
+}@media (max-width: 800px){
+    body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.0rem;
+    }
+    body .contacts{
+        font-size: 1rem;
+    }
+    body ul li{
+        font-size: 1rem;
+    }
+}
+  </style>
+  <style>@media print{
+    body{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    body .for-print{
+        display: inline;
+    }
+    body .not-for-print{
+        display: none;
+    }
+}
+  </style>
+ </head>
+ <body>
+  <h1 class=title>Alexander Artemenko</h1>
+  <h2 class=subtitle>Senior Software Developer</h2>
+  <div class=about><p>A senior developer is looking for a crew of inspired and skilful engineers to build great products. </p><p>I started my path as a C++ developer but switched to Python 11 years ago. Used Python to build different kinds of services from internal identity management systems in a medium-size company (3,000-4,000 employees) to a b2b service Yandex Connect with DAU 100,000. </p><p>I like to use and create opensource libraries and projects, you'll find dozens of them at <a href="https://github.com/svetlyak40wt">my GitHub profile</a>. </p><p>The essential quality of each team member is his engagement with the project and the desire to improve it. I want to become a team member where every person is highly motivated. </p>
+  </div>
+  <div class=side-by-side>
+   <div class=box>
+    <h3 class=list-header>Qualities</h3>
+    <ul class=qualities>
+     <li>Self-motivated
+     <li>Product-oriented
+     <li>Eager for new knowledge
+    </ul>
+   </div>
+   <div class=box>
+    <h3 class=list-header>Skills</h3>
+    <ul class=skills>
+     <li>C++ (5 years)
+     <li>Python (11 years)
+     <li>Common Lisp (7 years)
+     <li>Docker &amp; Devops tools (10 years)
+    </ul>
+   </div>
+  </div>
+  <h3 class=subheader>Experience at Yandex 2005-Present (15 years)</h3>
+  <div class=about><p>I started my career at Yandex as a C++ software developer but after a few years switched to the Python. Participated in many projects, have built external and internal web services. Some of them aren't available anymore. </p><p>Currently, I'm working on the improvement of our data analytics platform, building better tools for ETL process execution. Most technologies we use are closed source, but I worked on their integration with Jupyter Hub and Luigi. </p><p>The previous product I worked on is Yandex Connect. I was a team lead on this project. It is a b2b product of Yandex, where we started to open and sell some of our internal tools to other companies. Core technologies we've used in this project are Python, Flask and Postgresql. </p><p>The most exciting and valuable project I've worked on in Yandex is our identity management system. I've built it from scratch in close cooperation with our security team and a few product teams. The schedule was very tight because this system was a must-have requirement to let Yandex go to the IPO. This identity management system is alive and widely used across the company, providing access to almost any of our internal tools. </p>
+  </div>
+  <h3 class=subheader>Experience Before Yandex 2000-2005 (5 years)</h3>
+  <div class=about><p>Before Yandex, I've worked for 5 years as a C++ developer in <a href="https://cps.tver.ru/">this small software company</a>. We've built a tactical training system for the Russian Navy. I've worked on the core of our military simulator implementing the networking protocol to pass updates between the server and working stations. </p>
+  </div>
+  <h3 class=subheader>Opensource Projects</h3>
+  <div class=about><p>Besides lots of libraries both for Python and Common Lisp, I've created two large projects. </p><p>The first one is Allmychanges.com. It was the ChangeLog aggregator which was able to parse and extract release notes from web sites, repositories and Google Play and let you subscribe on them. I've developed this project for a few years. It was written in Python + MySQL on the backend and React on the frontend. </p><p>Allmychanges is down now because I've mostly switched my interest to the Common Lisp but don't have time for rewriting this web service. </p><p>My current effort is another opensource web service I've built for the Common Lisp community. It is a Quicklisp compatible software distribution - <a href="https://ultralisp.org">Ultralisp.org</a>. It is like <a href="https://pypi.org/">PyPi.org</a> but for publishing Common Lisp libraries in a few clicks. </p><p>Another current project is the "Common Lisp Project of the Day" series, published <a href="https://40ants.com/lisp-project-of-the-day/">in the blog</a> and on Twitter. Every day I'm choosing a random library and trying to describe how to use it. This content is especially useful if there is no documentation yet :) </p>
+  </div>
+  <h3 class=header>Final Words</h3>
+  <div class=about><p>I want to work in a distributed team and looking for skilful, product-oriented team members. </p><p>If you are looking for a passionate software developer, please contact me: </p>
+  </div>
+  <table class=centered>
+   <tr>
+    <td>
+     <h3 class=list-header>Contacts</h3>
+     <table class=contacts>
+      <tr>
+       <td class=label>Email
+       <td class=value><a href=mailto:job@svetlyak.ru>job@svetlyak.ru</a>
+      <tr>
+       <td class=label>Skype
+       <td class=value><a href=skype:svetyak40wt?chat>svetyak40wt</a>
+      <tr>
+       <td class=label>Github
+       <td class=value><a class=not-for-print href=https://github.com/svetlyak40wt>
+         svetlyak40wt</a><a class=for-print href=https://github.com/svetlyak40wt>
+         https://github.com/svetlyak40wt</a>
+      <tr>
+       <td class=label>Linkedin
+       <td class=value><a class=not-for-print
+        href="https://www.linkedin.com/in/svetlyak40wt/">svetlyak40wt</a><a
+        class=for-print href="https://www.linkedin.com/in/svetlyak40wt/">
+         https://www.linkedin.com/in/svetlyak40wt/</a>
+      <tr>
+       <td class=label>Twitter
+       <td class=value><a class=not-for-print href=https://twitter.com/svetyak40wt>
+         svetyak40wt</a><a class=for-print href=https://twitter.com/svetyak40wt>
+         https://twitter.com/svetyak40wt</a>
+      
+     </table>
+   
+  </table>
+ </body>
 </html>
