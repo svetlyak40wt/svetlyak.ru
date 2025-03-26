@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио кейс: Telegram бот для отслеживания платежей</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .fullscreen img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .fullscreen .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-[#e78b24] text-white py-4">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Портфолио кейс: Telegram бот для отслеживания платежей</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section id="goals" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Цели проекта</h2>
+      <p class="text-lg">
+        Цель заказчика - упростить отслеживание платежей за различные занятия детей и прочих семейных платежей.
+      </p>
+    </section>
+
+    <section id="features" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Функции бота</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li>Создавать регулярные платежи и напоминать о них.</li>
+        <li>Отслеживать просроченные платежи.</li>
+        <li>Вести информацию о платежах в системе трекинга задач Яндекс Трекер.</li>
+        <li>Давать возможность создать новые платежи по заранее созданным пресетам или в произвольной форме.</li>
+      </ul>
+    </section>
+
+    <section id="implementation" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Особенности реализации</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li>Бот запрограммирован на языке Common Lisp.</li>
+        <li>Развернут на облачном сервере заказчика.</li>
+        <li>Интегрирован с API Yandex Tracker.</li>
+      </ul>
+    </section>
+
+    <section id="screenshots" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Скриншоты</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="cursor-pointer">
+          <img src="https://storage.yandexcloud.net/40ants-portfolio/payments-bot/payments-bot-example.png" alt="Пример работы бота" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+        <div class="cursor-pointer">
+          <img src="https://storage.yandexcloud.net/40ants-portfolio/payments-bot/payments-bot-commands.png" alt="Команды бота" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+        <div class="cursor-pointer">
+          <img src="https://storage.yandexcloud.net/40ants-portfolio/payments-bot/payments-bot-demo-full.gif" alt="Демонстрация работы бота" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#e78b24] text-white py-4 mt-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2023 Портфолио разработчика</p>
+    </div>
+  </footer>
+
+  <div id="fullscreen" class="fullscreen hidden">
+    <span class="close">&times;</span>
+    <img src="" alt="Fullscreen image">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const fullscreen = document.getElementById('fullscreen');
+      const images = document.querySelectorAll('#screenshots img');
+
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          fullscreen.querySelector('img').src = img.src;
+          fullscreen.classList.remove('hidden');
+        });
+      });
+
+      document.querySelector('.close').addEventListener('click', () => {
+        fullscreen.classList.add('hidden');
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          fullscreen.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

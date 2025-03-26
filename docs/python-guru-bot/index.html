@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио кейс: Telegram бот для изучающих Python</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    .modal img {
+      max-height: 90%;
+      max-width: 90%;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <header class="bg-[#e78b24] text-white py-6 px-4 text-center">
+    <h1 class="text-3xl font-bold">Портфолио кейс: Telegram бот для изучающих Python</h1>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Описание проекта</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Цель заказчика - привлечь аудиторию интересующуюся программированием, и предложить им консультации с настоящим наставником в случае если нужна серьезная помощь.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Функции бота</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Отвечать на вопросы ученика согласно заданному промпту и знаниями которыми обладает нейросеть.</li>
+        <li>В случае серьезных затруднений предлагать ученику устроить созвон с репетитором.</li>
+        <li>Создавать встречу в Google Календаре и отправлять ссылку ученику.</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Особенности реализации</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Бот собран на конструкторе Suvvy.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Скриншоты</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <img src="https://storage.yandexcloud.net/40ants-portfolio/python-guru-bot/python-guru-bot-1.png" alt="Скриншот 1" class="cursor-pointer rounded-lg shadow-lg">
+        <img src="https://storage.yandexcloud.net/40ants-portfolio/python-guru-bot/python-guru-bot-2.png" alt="Скриншот 2" class="cursor-pointer rounded-lg shadow-lg">
+        <img src="https://storage.yandexcloud.net/40ants-portfolio/python-guru-bot/python-guru-bot-3.png" alt="Скриншот 3" class="cursor-pointer rounded-lg shadow-lg">
+        <img src="https://storage.yandexcloud.net/40ants-portfolio/python-guru-bot/python-guru-bot-4.png" alt="Скриншот 4" class="cursor-pointer rounded-lg shadow-lg">
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#e78b24] text-white py-6 px-4 text-center">
+    <p>&copy; 2023 Портфолио кейс: Telegram бот</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modal-img" src="" alt="Развернутый скриншот">
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn = document.querySelector('.close');
+    console.log('Initializing');
+
+    // Открытие модального окна при клике на изображение
+    document.querySelectorAll('.grid img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = 'block';
+        modalImg.src = img.src;
+      });
+    });
+
+    // Закрытие модального окна при клике на крестик
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // Закрытие модального окна при нажатии ESC
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            modal.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
