@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио кейс: Telegram бот для P2P-обмена USDT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .fullscreen img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .fullscreen .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-[#e78b24] text-white py-4">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Портфолио кейс: Telegram бот для P2P-обмена USDT</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section id="goals" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Цель проекта</h2>
+      <p class="text-lg">
+        Реализовать Telegram-бот для P2P-обмена USDT с ручным управлением оператора, комиссией для продавца,
+        ограничениями по количеству операций и процедурами верификации пользователей.
+      </p>
+    </section>
+
+    <section id="features" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Основные функции</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li>Создание и управление заявками на продажу USDT</li>
+        <li>Автоматический расчет комиссии и резервируемой суммы</li>
+        <li>Система верификации пользователей</li>
+        <li>Поиск и бронирование заявок покупателями</li>
+        <li>Ручное управление транзакциями через оператора</li>
+        <li>Система разрешения споров</li>
+      </ul>
+    </section>
+
+    <section id="scenarios" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Сценарии использования</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Для продавца</h3>
+          <ul class="list-disc list-inside">
+            <li>Создание заявки с указанием суммы и курса</li>
+            <li>Перевод USDT на адрес обменника</li>
+            <li>Подтверждение получения оплаты</li>
+            <li>Верификация через криптокошелек</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-3">Для покупателя</h3>
+          <ul class="list-disc list-inside">
+            <li>Просмотр доступных заявок</li>
+            <li>Бронирование и оплата заявки</li>
+            <li>Получение USDT после подтверждения</li>
+            <li>Верификация через банковскую карту</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Скриншоты</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/00-welcome-message.jpeg" alt="Приветственное сообщение" class="w-full h-full rounded-lg object-contain">
+        </div>
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/01-architecture.png" alt="Архитектура системы" class="w-full h-full rounded-lg object-contain">
+        </div>
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/02-welcome-schema.png" alt="Схема приветствия" class="w-full h-full rounded-lg object-contain">
+        </div>
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/03-seller-schema.png" alt="Схема работы продавца" class="w-full h-full rounded-lg object-contain">
+        </div>
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/04-seller-view.png" alt="Интерфейс продавца" class="w-full h-full rounded-lg object-contain">
+        </div>
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/05-buyer-view.png" alt="Интерфейс покупателя" class="w-full h-full rounded-lg object-contain">
+        </div>
+        <div class="cursor-pointer aspect-square bg-white p-4 rounded-lg shadow-md transition-all duration-200 hover:shadow-sm hover:scale-[0.98] active:scale-95">
+          <img src="images/06-crm.png" alt="CRM оператора" class="w-full h-full rounded-lg object-contain">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-8 bg-[#f5f5f5] p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">Готовы заказать разработку чат-бота?</h2>
+
+      <div class="text-lg">
+        <p class="mb-4">Свяжитесь со мной, чтобы обсудить ваш проект. Я помогу подобрать оптимальное решение под ваши задачи и бюджет.</p>
+
+        <div class="flex flex-col md:flex-row gap-4 mt-6">
+          <a href="mailto:freelance@svetlyak.ru" class="inline-flex items-center bg-[#e78b24] text-white py-3 px-6 rounded-lg hover:bg-[#d67d15] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            freelance@svetlyak.ru
+          </a>
+
+          <a href="https://t.me/svetlyak40wt" target="_blank" class="inline-flex items-center bg-[#0088cc] text-white py-3 px-6 rounded-lg hover:bg-[#0077b5] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm-2.5 13.5l7.5-3.5-7.5-3.5v2.5l4.5 1-4.5 1v2.5z"/>
+            </svg>
+            @svetlyak40wt
+          </a>
+
+          <a href="/portfolio/" class="inline-flex items-center bg-gray-700 text-white py-3 px-6 rounded-lg hover:bg-gray-600 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+            Список услуг
+          </a>
+        </div>
+
+        <p class="mt-6 text-gray-600 italic">Отвечаю в течение 24 часов. Первая консультация бесплатна!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#e78b24] text-white py-4 mt-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Портфолио разработчика</p>
+    </div>
+  </footer>
+
+  <div id="fullscreen" class="fullscreen hidden">
+    <span class="close">&times;</span>
+    <img src="" alt="Fullscreen image">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const fullscreen = document.getElementById('fullscreen');
+      const images = document.querySelectorAll('#screenshots img');
+
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          fullscreen.querySelector('img').src = img.src;
+          fullscreen.classList.remove('hidden');
+        });
+      });
+
+      document.querySelector('.close').addEventListener('click', () => {
+        fullscreen.classList.add('hidden');
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          fullscreen.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
